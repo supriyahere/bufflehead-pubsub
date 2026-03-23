@@ -1,0 +1,6 @@
+google-cloud-pubsub
+google-cloud-bigquery
+pandas
+fastapi
+uvicorn
+requests

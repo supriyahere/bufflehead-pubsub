@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+.env/
+.DS_Store
+prometheus-2.48.1.linux-amd64/
+*.tar.gz
+prometheus-2.48.1.linux-amd64/
+*.tar.gz
+prometheus-2.48.1.linux-amd64/
+*.tar.gz
