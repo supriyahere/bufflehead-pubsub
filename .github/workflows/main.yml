@@ -3,10 +3,11 @@ name: CI Pipeline
 on:
   push:
     branches: [ main ]
- 
+  workflow_dispatch:
+
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
     - name: Checkout repository
@@ -18,9 +19,7 @@ jobs:
         python-version: 3.10
 
     - name: Install dependencies
-      run: |
-        pip install fastapi uvicorn prometheus_client
+      run: pip install fastapi uvicorn prometheus_client
 
     - name: Run simple test
-      run: |
-        echo "CI pipeline running successfully"
+      run: echo "CI pipeline running successfully"
